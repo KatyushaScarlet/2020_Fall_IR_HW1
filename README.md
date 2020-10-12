@@ -1,53 +1,49 @@
 WARC Indexer
 ============
-#### 說明
-1. 可以使用ClueWeb09_English_Sample.warc進行測試
-2. 會產生
-
-#### 使用方式
+#### Usage
 `python3 main.py filename [-cf] [-sw] [-st]`
+
 ##### Parameters:
 1. -cf use case folding
 2. -sw use stopword removal
 3. -st use stemming
 
-##### Input:
+##### Input example:
 `python3 main.py 01.warc.gz -cf -sw -st`
 
 or
 
 `python3 main.py 01.warc -cf -sw -st`
 
-##### Output
-1. 產生 01.warc.gz.index.dict 的字典檔
-2. 產生 01.warc.gz.index.idx 的 inverted index file
-3. Sample Output
+##### Output example:
+1. 01.warc.gz.index.dict (dictionary)
+2. 01.warc.gz.index.idx (inverted index)
+3. Console Output
 ```
 Start......
-tmp/ewwMRMrTKfZGQQBdpxkh
 ----------------------------------------------------------
 Analysis document:
-48.97524404525757 s
-Average: 1.7236307469999848 ms
-Document process per second: 580.1706669137347 ps
+48.47459816932678 s
+Average: 1.7060110568496791 ms
+Document process per second: 586.1626722669668 ps
 ----------------------------------------------------------
 build full index ......
 ----------------------------------------------------------
 Build full index:
-18.96880793571472 s
-Average: 0.6675866803587922 ms
-DPS: 1497.932821940895 ps
+18.97804856300354 s
+Average: 0.6679118942423995 ms
+DPS: 1497.203461444989 ps
 ----------------------------------------------------------
-dump index from memory to file 01.warc.gz.index.txt
+dump index from memory to file
 ----------------------------------------------------------
 dump index:
-14.521172285079956 s
+13.609108209609985 s
 ----------------------------------------------------------
 finish
 ----------------------------------------------------------
 Total time analysis:
-82.49296188354492 s
-Average 2.903250719246173 ms
-DPS 344.44140116320295 ps
+81.0864520072937 s
+Average 2.8537500749594593 ms
+DPS 350.41606563296597 ps
 ```
 
