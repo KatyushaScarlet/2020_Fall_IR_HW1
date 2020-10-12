@@ -1,21 +1,21 @@
 WARC Indexer
 ============
-#### Usage
+# Usage
 `python3 main.py filename [-cf] [-sw] [-st]`
 
-##### Parameters:
+# Parameters:
 1. -cf use case folding
 2. -sw use stopword removal
 3. -st use stemming
 
-##### Input example:
+# Input example:
 `python3 main.py 01.warc.gz -cf -sw -st`
 
 or
 
 `python3 main.py 01.warc -cf -sw -st`
 
-##### Output example:
+# Output example:
 1. 01.warc.gz.index.dict (dictionary)
 2. 01.warc.gz.index.idx (inverted index)
 3. Console Output
